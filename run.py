@@ -35,11 +35,10 @@ def hello_monkey():
         name = "Monkey"
 
     if counter == 1:
+        message = "Hello"
+    else:
         message = "".join([name, " has messaged ", request.values.get('To'), " ", 
         str(counter), " times."])
-
-    else:
-        message = "Hello"
 
     resp = twilio.twiml.Response()
     resp.sms(message)
