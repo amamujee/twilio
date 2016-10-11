@@ -40,7 +40,7 @@ def hello_monkey():
         if counter ==2:
             message = "".join([name, ", I know you miss me, and when you close your eyes you dream of my smell"])
         else:
-            message = "I'm done with this ,".join([name,])
+            message = "I'm done with this ,".join([name,""])
 
     resp = twilio.twiml.Response()
     resp.sms(message)
