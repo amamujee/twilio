@@ -34,7 +34,7 @@ def hello_monkey():
     else:
         name = "Monkey"
 
-    if counter == 1:
+    if counter >11:
         message = "Hello"
     else:
         message = "".join([name, " has messaged ", request.values.get('To'), " ", 
