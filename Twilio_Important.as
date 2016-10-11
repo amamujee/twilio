@@ -24,5 +24,8 @@ virtualenv venv
 source venv/bin/activate
 
 Website
-http://quiet-hollows-27977.herokuapp.com/
+http://twilio-aadil.herokuapp.com/?From=%2B16175105178
 
+
+Heroku run one off dynos
+heroku run python manage.py shell
