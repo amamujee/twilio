@@ -38,7 +38,7 @@ def hello_monkey():
         message = "".join([name, ", How could you forget me???"])
     else:
         if counter ==2:
-            message = "".join([name, ", I know you miss me, and I know you are thinking of my smell"])
+            message = "".join([name, ", I know you miss me, and when you close your eyes you dream of my smell"])
         else:
             message = "I'm done with this ,".join([name,])
 

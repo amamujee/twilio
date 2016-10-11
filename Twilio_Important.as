@@ -29,3 +29,12 @@ http://twilio-aadil.herokuapp.com/?From=%2B16175105178
 
 Heroku run one off dynos
 heroku run python manage.py shell
+
+
+Callbaks
+http://requestb.in/1h18unm1
+
+import requests, time
+r = requests.post('http://requestb.in/1h18unm1', data={"ts":time.time()})
+print r.status_code
+print r.content
