@@ -4,7 +4,10 @@ cd Documents/my_tutorial_folder
 source bin/activate
 
 Twilio number +16173077805
-(510) 460-1941 - purchased
+(510) 460-1941 - purchased heroku ps:scale web=1
+
+Configure Procfile
+web: gunicorn run:app
 
 Recovery key
 R1LZJxTnLKDwul1tZvtHBNsWqtv0Gn4RuSm0D6ac
@@ -19,3 +22,4 @@ source venv/bin/activate
 
 Website
 http://quiet-hollows-27977.herokuapp.com/
+
