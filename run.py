@@ -35,12 +35,12 @@ def hello_monkey():
         name = "Monkey"
 
     if counter <2:
-        message = "".join([name, ", you're a smelly monkey - Give me Hugo Back!"])
+        message = "".join([name, ", How could you forget me???"])
     else:
         if counter ==2:
-            message = "".join([name, ", you're the #1 smelly monkey - and I'm going to get you"])
+            message = "".join([name, ", I know you miss me, and I know you are thinking of my smell"])
         else:
-            message = "".join([name, ", you know you miss me, but i miss Hugo's smell more"])
+            message = "I'm done with this ,".join([name,])
 
     resp = twilio.twiml.Response()
     resp.sms(message)

@@ -7,9 +7,9 @@ auth_token = "66a1c2714748a09d057429d10e0e6346"
 client = TwilioRestClient(account_sid, auth_token)
 
 message = client.messages.create(
-	to="12025773026", 
+	to="+18483918456", 
 	from_="+15104601941",
-    body="I miss Hugo, How are you good lookin'?", 
+    body="Heyyy - What you up to??", 
    media_url="http://dailypicksandflicks.com/wp-content/uploads/2011/12/cute-monkey1.jpg",
     status_callback="http://requestb.in/1h18unm1"
     )
