@@ -39,7 +39,7 @@ def hello_monkey():
     else:
         if counter ==2:
             message = "".join([name, ", you're the #1 smelly monkey - and I'm going to get you"])
-        else
+        else:
             message = "".join([name, ", you know you miss me, but i miss Hugo's smell more"])
 
     resp = twilio.twiml.Response()
