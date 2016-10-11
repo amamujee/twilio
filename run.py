@@ -8,7 +8,7 @@ callers = {
     "+14158675309": "Curious George",
     "+14158675310": "Boots",
     "+14158675311": "Virgil",
-    "17574776464": "Little One",
+    "+17574776464": "Little One",
     "+16175105178": "Aadil"
 }
 
