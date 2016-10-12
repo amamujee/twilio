@@ -13,7 +13,8 @@ callers = {
     "+14158675311": "Virgil",
     "+17574776464": "Little One",
     "+16175105178": "Aadil",
-    "+12025773026": "Shafiq"
+    "+12025773026": "Shafiq",
+    "+13059785007": "Hanif"
 }
 
 @app.route("/", methods=['GET', 'POST'])
@@ -32,15 +33,20 @@ def hello_monkey():
     if from_number in callers:
         name = callers[from_number]
     else:
-        name = "Monkey"
+        name = "Big Monkey"
 
-    if counter <2:
-        message = "".join([name, ", How could you forget me???"])
+    if counter ==1:
+        message = "".join([name, ", How could you forget me??? We had so much fun"])
+    if counter ==2:
+        message = "".join([name, ", Give me back my Hugo, He's mine"])
+    if counter ==3:
+        message = "".join([name, ", You're a smelly guy, and Hugo is my best friend"])
+    if counter ==4:
+        message = "I know you miss me, and when you close your eyes you dream of my smell - I dream of Hugo"
+    if counter ==5:
+        message = "".join([name, ", Tell me you don't miss the warmth of my breath - till next octoberfest"])
     else:
-        if counter ==2:
-            message = "".join([name, ", I know you miss me, and when you close your eyes you dream of my smell"])
-        else:
-            message = "".join([name, ", I'm done with this"])
+        message = "I'm done with this - Baby Monkey Out!"
 
     resp = twilio.twiml.Response()
     resp.sms(message)
